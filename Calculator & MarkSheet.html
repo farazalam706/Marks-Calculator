@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // ---------------Even or Odd------------------//
+
+
+        // var number = +prompt("Enter a number to check whether its Even or Odd..!!!");
+        // if (number % 2 == 0) {
+        //     alert("Even Number!");
+        // }
+        // else {
+        //     alert("Odd Number!");
+
+        // }
+
+        // // -------------Calculator------------------
+
+        // var choice = +prompt("What do you want to do? \n 1: Summation \n 2: Subtraction \n 3: Multiplication \n 4: Division");
+        // if (choice == 1) {
+        //     var x = +prompt("Enter first number!");
+        //     var y = +prompt("Enter second number!");
+        //     var ans = x + y;
+        //     document.write(`Summation of your number is ${ans}`);
+        // }
+        // if (choice == 2) {
+        //     var x = +prompt("Enter first number!");
+        //     var y = +prompt("Enter second number!");
+        //     var ans = x - y;
+        //     document.write(`Subtraction of your number is ${ans}`);
+        // }
+        // if (choice == 3) {
+        //     var x = +prompt("Enter first number!");
+        //     var y = +prompt("Enter second number!");
+        //     var ans = x * y;
+        //     document.write(`Multiplication of your number is ${ans}`);
+        // }
+        // if (choice == 4) {
+        //     var x = +prompt("Enter first number!");
+        //     var y = +prompt("Enter second number!");
+        //     var ans = x / y;
+        //     document.write(`Division of your number is ${ans}`);
+        // }
+
+        // -------------Marksheet------------------
+
+        var subjectQuantity = +prompt("How many subjects?");
+    subjects = [];
+    marks = {};
+    for (var i = 0; i < subjectQuantity; i++) {
+      subjects.push(prompt(`Enter the name of your subject ${i + 1}:`));
+    }
+    // document.write(subjects);
+    obValue = 0;
+    for (var i = 0; i < subjects.length; i++) {
+      marks[subjects[i]] = +prompt(`Enter Marks in ${subjects[i]}`);
+      obValue = obValue + marks[subjects[i]];
+    }
+    // console.log(marks);
+    console.log(`Obtained Marks: ${obValue}`);
+    TotalMarks = subjectQuantity * 100;
+    percentage = obValue / TotalMarks *100;
+    console.log(`Percentage: ${percentage}`);
+
+
+
+
+    </script>
+</body>
+
+</html>
